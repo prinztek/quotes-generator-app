@@ -21,7 +21,9 @@ export const QuotesGenerator = () => {
   const generateRandomQuote = async () => {
     try {
       // send a request to server
-      const response = await fetch("http://localhost:8000/quote");
+      const response = await fetch(
+        "https://quotes-generator-app-server.vercel.app/quote"
+      );
 
       if (response.status === 200) {
         const quoteArr = await response.json(); // console.log(quoteArr);
