@@ -53,8 +53,8 @@ export const QuotesGenerator = () => {
 
     return (
       <>
-        <p>{state.data.quote}</p>
-        <p>{state.data.author}</p>
+        <p>{`"${state.data.quote}"`}</p>
+        <p>{`- ${state.data.author}`}</p>
       </>
     );
   };
